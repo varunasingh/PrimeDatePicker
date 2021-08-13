@@ -372,6 +372,15 @@
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/afghanLocaleRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:text="Afghan"
+                android:textColor="@color/gray900"
+                android:textSize="14sp"
+                android:textStyle="bold" />
         </RadioGroup>
 
         <View

@@ -56,6 +56,7 @@ public class DatePickerActivity extends AppCompatActivity {
 
     private RadioButton calendarDefaultLocaleRadioButton;
     private RadioButton englishLocaleRadioButton;
+    private RadioButton afghanLocaleRadioButton;
 
     private RadioButton lightThemeRadioButton;
     private RadioButton darkThemeRadioButton;
@@ -82,6 +83,7 @@ public class DatePickerActivity extends AppCompatActivity {
 
         calendarDefaultLocaleRadioButton = findViewById(R.id.calendarDefaultLocaleRadioButton);
         englishLocaleRadioButton = findViewById(R.id.englishLocaleRadioButton);
+        afghanLocaleRadioButton = findViewById(R.id.afghanLocaleRadioButton);
 
         lightThemeRadioButton = findViewById(R.id.lightThemeRadioButton);
         darkThemeRadioButton = findViewById(R.id.darkThemeRadioButton);

@@ -27,6 +27,7 @@ android {
 
 repositories {
     jcenter()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
@@ -41,7 +42,9 @@ dependencies {
     implementation project(':library')
 
     // ------- PrimeCalendar
-    implementation "com.aminography:primecalendar:$primecalendar_version"
+//    implementation "com.aminography:primecalendar:$primecalendar_version"
+//    implementation 'com.github.varunasingh:PrimeCalendar:-SNAPSHOT'
+    implementation 'com.github.varunasingh:PrimeCalendar:primary-SNAPSHOT'
 
     // ------- Test
     testImplementation "junit:junit:$junit_version"

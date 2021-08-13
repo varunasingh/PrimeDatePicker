@@ -261,6 +261,12 @@ class CalendarViewActivity : AppCompatActivity(), OnDayPickedListener {
                     calendarView.locale = Locale.ENGLISH
                 }
             }
+            afghanLocaleRadioButton.setOnCheckedChangeListener { button, isChecked ->
+                if (button.isPressed && isChecked) {
+                    closeDrawer()
+                    calendarView.locale = Locale("ps-af")
+                }
+            }
         }
     }
 

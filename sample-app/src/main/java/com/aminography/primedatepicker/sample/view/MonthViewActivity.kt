@@ -16,8 +16,20 @@ import com.aminography.primedatepicker.common.PickType
 import com.aminography.primedatepicker.sample.*
 import com.aminography.primedatepicker.utils.invisible
 import com.aminography.primedatepicker.utils.visible
+import kotlinx.android.synthetic.main.activity_date_picker.view.*
 import kotlinx.android.synthetic.main.activity_month_view.*
 import kotlinx.android.synthetic.main.nav_drawer_month.view.*
+import kotlinx.android.synthetic.main.nav_drawer_month.view.calendarDefaultLocaleRadioButton
+import kotlinx.android.synthetic.main.nav_drawer_month.view.civilRadioButton
+import kotlinx.android.synthetic.main.nav_drawer_month.view.englishLocaleRadioButton
+import kotlinx.android.synthetic.main.nav_drawer_month.view.afghanLocaleRadioButton
+import kotlinx.android.synthetic.main.nav_drawer_month.view.hijriRadioButton
+import kotlinx.android.synthetic.main.nav_drawer_month.view.japaneseRadioButton
+import kotlinx.android.synthetic.main.nav_drawer_month.view.maxDateCheckBox
+import kotlinx.android.synthetic.main.nav_drawer_month.view.minDateCheckBox
+import kotlinx.android.synthetic.main.nav_drawer_month.view.multipleRadioButton
+import kotlinx.android.synthetic.main.nav_drawer_month.view.persianRadioButton
+import kotlinx.android.synthetic.main.nav_drawer_month.view.singleRadioButton
 import java.util.*
 
 /**
@@ -221,6 +233,12 @@ class MonthViewActivity : AppCompatActivity(), OnDayPickedListener {
                 if (button.isPressed && isChecked) {
                     closeDrawer()
                     monthView.locale = Locale.ENGLISH
+                }
+            }
+            afghanLocaleRadioButton.setOnCheckedChangeListener { button, isChecked ->
+                if (button.isPressed && isChecked) {
+                    closeDrawer()
+                    monthView.locale = Locale("ps-af")
                 }
             }
         }
