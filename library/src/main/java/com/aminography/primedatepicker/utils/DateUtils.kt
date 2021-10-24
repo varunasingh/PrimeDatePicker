@@ -105,12 +105,12 @@ object DateUtils {
 
     fun storeCalendar(calendar: PrimeCalendar?): String? =
         calendar?.run {
-            "${calendarType.name}-${locale.language}-$firstDayOfWeek-${year}-${month}-${dayOfMonth}"
+            "${calendarType.name}_${locale.language}_${firstDayOfWeek}_${year}_${month}_${dayOfMonth}"
         }
 
     fun restoreCalendar(input: String?): PrimeCalendar? =
         input?.run {
-            split("-").let {
+            split("_").let {
                 CalendarFactory.newInstance(CalendarType.valueOf(it[0]), Locale(it[1])).apply {
                     firstDayOfWeek = it[2].toInt()
                     set(it[3].toInt(), it[4].toInt(), it[5].toInt())
@@ -120,10 +120,10 @@ object DateUtils {
 
     fun dateString(calendar: PrimeCalendar?): String? =
         calendar?.run {
-            "${year}-${month}-${dayOfMonth}"
+            "${year}_${month}_${dayOfMonth}"
         }
 
-    fun dateString(year: Int, month: Int, dayOfMonth: Int) = "${year}-${month}-${dayOfMonth}"
+    fun dateString(year: Int, month: Int, dayOfMonth: Int) = "${year}_${month}_${dayOfMonth}"
 
     fun defaultWeekStartDay(calendarType: CalendarType): Int {
         return when (calendarType) {

@@ -130,6 +130,9 @@ class DatePickerActivity : AppCompatActivity() {
     private fun getLocale(calendarType: CalendarType): Locale {
         return when {
             calendarDefaultLocaleRadioButton.isChecked -> CalendarFactory.newInstance(calendarType).locale
+            afghanLocaleRadioButton.isChecked -> Locale("fa-af")
+            pashtoLocaleRadioButton.isChecked -> Locale("ps")
+            kurdishLocaleRadioButton.isChecked -> Locale("ku")
             else -> Locale.ENGLISH
         }
     }
