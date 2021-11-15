@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_today">نن</string>
+    <string name="action_cancel">لغو کول</string>
+    <string name="action_select">غوره کړئ</string>
+
+    <string name="prime_date_picker_from">لخوا</string>
+    <string name="prime_date_picker_to">ته</string>
+</resources>

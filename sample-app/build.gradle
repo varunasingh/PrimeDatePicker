@@ -45,7 +45,8 @@ dependencies {
 //    implementation "com.aminography:primecalendar:$primecalendar_version"
 //    implementation 'com.github.varunasingh:PrimeCalendar:-SNAPSHOT'
 //    implementation 'com.github.varunasingh:PrimeCalendar:primary-SNAPSHOT'
-    implementation 'com.github.varunasingh:PrimeCalendar:1941ea405e'
+    //implementation 'com.github.varunasingh:PrimeCalendar:1941ea405e'
+    implementation 'com.github.varunasingh:PrimeCalendar:-SNAPSHOT'
 
     // ------- Test
     testImplementation "junit:junit:$junit_version"
