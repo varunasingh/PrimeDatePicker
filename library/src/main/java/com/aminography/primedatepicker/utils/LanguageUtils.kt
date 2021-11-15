@@ -13,6 +13,8 @@ import java.util.*
 
 fun CalendarType.findDirection(locale: Locale): Direction =
     when (locale.language) {
+        PersianCalendar.FARSI_AFGHAN_LOCALE,
+        PersianCalendar.PASHTO_LOCALE,
         PersianCalendar.DEFAULT_LOCALE,
         HijriCalendar.DEFAULT_LOCALE -> when (this) {
             CalendarType.CIVIL,
