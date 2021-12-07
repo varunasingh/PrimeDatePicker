@@ -51,9 +51,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
     // ------- PrimeCalendar
-//    implementation "com.aminography:primecalendar:$primecalendar_version"
-//    implementation 'com.github.varunasingh:PrimeCalendar:-SNAPSHOT'
-    implementation 'com.github.varunasingh:PrimeCalendar:primary-SNAPSHOT'
+    implementation "com.aminography:primecalendar:$primecalendar_version"
 
     // ------- Coroutine
     def coroutine_version = '1.3.9'
